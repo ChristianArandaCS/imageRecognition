@@ -1,4 +1,5 @@
-# find how to not get an error on the paddleocr to debug better
+# python 3.7.5
+# This script will extract information from images in selected folder
 from paddleocr import PaddleOCR,draw_ocr
 import cv2
 import xlsxwriter
@@ -13,16 +14,13 @@ from tkinter import filedialog
 
 script_path = os.path.abspath(os.curdir)
 
-##########################################################################
-
 # creating main root
 root = Tk()
 root.geometry("350x150")
-root.iconbitmap("C:/Users/chris/OneDrive/Desktop/scipts/python/my_scripts/test_phase/venv_test3.7.5/ying-yang.ico")
+root.iconbitmap(script_path,"/anonymous.ico")
 root.title("Text rocognition")
 
 ##########################################################################
-
 
 
 # Paddleocr supports Chinese, English, French, German, Korean and Japanese.
